@@ -1,0 +1,209 @@
+body {
+    /*Todo o conteúdo das páginas */
+    color: white;
+    /*Definir a cor da letra para branco*/
+    background-color: black;
+    /*Definir a cor de fundo para preto*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Definir a fonta da letra para a família Arial*/
+    padding: 0 100px;
+    /*Adicionar um espaçamento superior e inferior de 0 e na direita e esquerda de 100px*/
+}
+
+nav {
+    /*Apenas o menu do site*/
+    position: fixed;
+    /*Fixar na tela*/
+    top: 0;
+    /*Posicionar no top */
+    left: 0;
+    /*Alinhar à esquerda*/
+    width: 100%;
+    /*Garantir que ocupe toda a largura da página*/
+    background-color: black;
+    /*Definir a cor de fundo para preto*/
+    z-index: 1000;
+    /*Colocar acima dos outros elementos*/
+    padding: 0;
+    /*Manter a consistência do padding do body*/
+}
+
+header {
+    margin-top: 100px;
+    /*Ajustar para ficar abaixo com o nav*/
+}
+
+nav ul {
+    /*Itens apenas dentro do menu (elemento nav)*/
+    display: flex;
+    /*Organizar os itens em linha*/
+    justify-content: center;
+    /*Distribuir os itens com espaços iguais entre eles*/
+    gap: 150px;
+    /*Adicionar espaçamento entre os itens*/
+    list-style-type: none;
+    /*Remover os marcadores dos itens*/
+    align-items: center;
+    /*Posicionar os itens no centro vertical da área*/
+    padding: 20px;
+    /*Adicionar um espaçamento interno em todos os lados dos itens*/
+}
+
+a {
+    /*Links de todas as páginas*/
+    color: white;
+    /*Mudar a cor da fonte para branco*/
+    text-decoration: none;
+    /*Tirar o sublinhado*/
+}
+
+header img {
+    /*Imagem utilizada apenas no menu (elemento header)*/
+    width: 150px;
+    /*Definir uma largura específica*/
+    height: 150px;
+    /*Definir uma altura específica*/
+    border-radius: 50%;
+    /*Transformar as bordas da imagem em um círculo, visto que a largura e altura são iguais*/
+}
+
+.center {
+    /*Utilizar classe para ser válida em todo o site que utilizar essa classe*/
+    text-align: center;
+    /*Centralizar todos os itens dessa classe*/
+}
+
+a:hover {
+    /*Links de todas as páginas*/
+    color: #EDB45A;
+    /*Alterar a cor do texto ao passar o mouse em cima*/
+    font-weight: bold;
+    /*Deixar o texto em negrito ao passar o mouse em cima*/
+}
+
+main img {
+    /*Imagens utilizadas no portfólio (elemento main)*/
+    width: 40px;
+    /*Definir uma largura específica*/
+    height: 40px;
+    /*Definir uma altura específica*/
+}
+
+h1 {
+    /*Título h1 utilizado em todas as páginas do site*/
+    margin-bottom: 0;
+    /*Remover espaçamento entre as informações*/
+}
+
+h2 {
+    /*Título h2 utilizado em todas as páginas do site*/
+    margin-top: 10px;
+    /*Adicionar espaçamento na parte superior*/
+}
+
+.containerExperiencia h3 {
+    /*Título h3 utilizados na seção de experiência*/
+    margin-bottom: 0;
+    /*Remover espaçamento entre as informações*/
+}
+
+.containerExperiencia p {
+    /*Parágrafos utilizados na seção de experiência*/
+    margin-top: 5px;
+    /*Adicionar espaçamento na parte superior*/
+}
+
+.containerPortfolio {
+    /*Utilizar classe para ser válida em todo o site que utilizar essa classe*/
+    display: flex;
+    /*Organizar os itens em linha*/
+    justify-content: center;
+    /*Centralizar os itens horizontalmente*/
+}
+
+main a {
+    /*Links das redes sociais utilizadas no portfólio)*/
+    margin: 0 50px;
+    /*Adicionar um espaçamento horizontal específico entre os links*/
+    text-align: center;
+    /*Centralizar o conteúdo dentro dos links*/
+}
+
+.containerPortfolio p {
+    /*Parágrafos utilizados na seção de redes sociais no porftólio*/
+    margin-top: 5px;
+    /*Adicionar um espaçamento superior específico nos parágrafos*/
+}
+
+.containerContato {
+    /*Caixa da página Contato*/
+    background-color: white;
+    /*Definir a cor de fundo para branco*/
+    color: black;
+    /*Definir a cor do texto para preto*/
+    border-radius: 10px;
+    /*Arredondar as bordas*/
+    width: 700px;
+    /*Definir uma largura específica*/
+    padding: 10px 10px 30px 10px;
+    /*Adicionar espaçamentos internos: 10px no topo e laterais, 30px na parte inferior*/
+}
+
+.containerContato input,
+.containerContato textarea {
+    /*Campos de entrada de texto e área de texto na caixa de contato*/
+    width: 99%;
+    /*Definir uma largura específica do elemento pai*/
+    height: 35px;
+    /*Definir aum altura específica*/
+    margin-bottom: 10px;
+    /*Adicionar um espaçamento inferior específico*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Definir a fonta da letra para a família Arial*/
+    font-size: 14px;
+    /*Definir o tamanho da fonte como 14 pixels*/
+}
+
+.containerContato textarea {
+    /*Área de texto na caixa de contato*/
+    height: 150px;
+    /*Definir uma altura específica*/
+}
+
+.containerContato button {
+    /*Botão na caixa de contato*/
+    display: block;
+    /*Exibir como bloco*/
+    border: none;
+    /*Remover a borda*/
+    outline: none;
+    /*Remover o contorno ao focar no botão*/
+    width: 150px;
+    /*Definir uma largura específica*/
+    height: 35px;
+    /*Definir uma altura específica*/
+    border-radius: 5px;
+    /*Arredondar as bordas*/
+    background-color: black;
+    /*Definir a cor de fundo para preto*/
+    color: white;
+    /*Definir a cor do texto para branco*/
+    font-weight: bold;
+    /*Deixar o texto em negrito*/
+    cursor: pointer;
+    /*Mudar o cursor para a forma de ponteiro ao passar o mouse*/
+}
+
+.containerContato button:hover {
+    /*Efeito ao passar o mouse em cima no botão*/
+    background-color: #EDB45A;
+    /*Alterar a cor de fundo para #EDB45A*/
+    color: black;
+    /*Alterar a cor do texto para preto*/
+}
+
+.centerContainer {
+    /*Utilizar classe para ser válida em todo o site que utilizar essa classe*/
+    margin: 0 auto;
+    /*Centralizar o elemento horizontalmente*/
+}
